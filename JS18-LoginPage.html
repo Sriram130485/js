@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>CheckBox</title>
+        <script>
+            function myValidate(form){
+                var myusername = form.username.value;
+                var mypassword = form.password.value;
+
+                if(myusername.length === 0){
+                    alert("Your Must Enter Valid Username");
+                    return false;
+                }
+                if (mypassword.length === 0){
+                    alert("Must enter valid password");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h4>JS Login Validation.....</h4>
+
+        <form action="JS01-Name.html" onsubmit="return myValidate(this)">
+
+        Username: <input type="text" name="username" size="10"><br>
+        Password: <input type="password" name="password" id="" size="10">
+        <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Programming....</h1>
+    <p>Click the button to display what day it is today..</p>
+    <button onclick="myFunction()">Today</button>
+    <p id="myday">.....</p>
+    
+    <script>
+        function myFunction(){
+            var x;
+            var d=new Date().getUTCDay();
+            // document.write(d);
+            switch(d){
+                case 0:
+                    x="Today is Sunday"
+                    break;
+                case 1:
+                    x="Today is monday"
+                    break;
+                case 2:
+                    x="Today is tuesday"
+                    break;
+                case 3:
+                    x="Today is wednesday"
+                    break;
+                case 4:
+                    x="Today is thursday"
+                    break;
+                case 5:
+                    x="Today is friday"
+                    break;
+                case 6:
+                    x="Today is saturday"
+                    break;
+            }
+        document.getElementById("myday").innerHTML=x;
+
+        }
+
+    </script>
+
+</body>
+</html>
